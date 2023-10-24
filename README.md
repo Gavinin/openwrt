@@ -9,6 +9,7 @@ cd openwrt
 git checkout r1p-lts-23.05
 git submodule init
 git submodule update
-
+./scripts/feeds update -a && ./scripts/feeds install -a
+make menuconfig
 
 ```
